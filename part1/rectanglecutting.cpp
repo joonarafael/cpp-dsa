@@ -30,7 +30,7 @@ int squares(int a, int b) {
     }
      
     for (int j = 1; j <= b / 2; j++) {
-        vertical_min = min(squares(a, j) + squares(a, b-j), vertical_min);
+        vertical_min = min(squares(a, j) + squares(a, b - j), vertical_min);
     }
 
     memory[a][b] = min(vertical_min, horizontal_min); 
@@ -38,10 +38,8 @@ int squares(int a, int b) {
     return memory[a][b];
 }
  
-int main()
-{
-    int a;
-    int b;
+int main() {
+    int a, b;
 
     cin >> a >> b;
 
