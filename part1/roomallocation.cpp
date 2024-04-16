@@ -29,7 +29,7 @@ int main() {
     vector<int> roomAllocations(n);
     set<pair<int, int>> emptyRooms;
 
-        int roomNumber = 0;
+    int roomNumber = 0;
 
     for (int i = 0; i < n; ++i) {
         if (emptyRooms.empty()) {

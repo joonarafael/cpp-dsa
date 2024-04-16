@@ -4,7 +4,7 @@
 
 using namespace std;
 
-long long int missingcoinsum(vector<long long>& arr, int n) {
+long long int missingCoinSum(vector<long long>& arr, int n) {
     long long int res = 1;
 
     sort(arr.begin(), arr.end());
@@ -26,7 +26,7 @@ int main() {
         cin >> arr[i];
     }
 
-    cout << missingcoinsum(arr, n) << endl;
+    cout << missingCoinSum(arr, n) << endl;
 
     return 0;
 }

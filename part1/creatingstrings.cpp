@@ -3,8 +3,7 @@
 
 using namespace std;
 
-void permute(string str, int left, int right, set<string> &unique)  
-{  
+void permute(string str, int left, int right, set<string> &unique) {
     if (left == right) {
         unique.insert(str);
     } else {  
@@ -25,7 +24,7 @@ int main() {
     set<string> unique;
     int n = input.size();  
 
-    permute(input, 0, n-1, unique); 
+    permute(input, 0, n - 1, unique); 
 
     cout << unique.size() << "\n";
 
